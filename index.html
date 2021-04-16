@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <title>Frontend Mentor | Clipboard landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="header">
+    <div class="container flex">
+         <div class="info-header">
+           <div class="logo">
+             <img src="images/logo.svg">
+           </div>
+             <h1> A history of everything you copy</h1>
+             <p>
+                 Clipboard allows you to track and organize everything you 
+                copy. Instantly access your clipboard on all your devices.
+             </p>
+           <div class="button">
+            <button class="btn-1">button for iOS</button>
+            <button class="btn-2">Download for Mac</button>
+           </div>
+         </div>
+    </div> 
+</div>
+<!-- start my section -->
+<div class="snippets">
+   <div class="info">
+       <h1>Keep track of your snippets</h1>
+       <p>
+        Clipboard instantly stores any item you copy in the cloud, 
+        meaning you can access your snippets immediately on all your 
+        devices. Our Mac and iOS apps will help you organize everything.      
+       </p>
+   </div>
+</div>
+
+<div class="iCloud">
+     <div class="container flex">
+         <div class="image-computer">
+           <img src="images/image-computer.png">
+         </div>
+
+         <div class="info-History">
+           <div class="col-1">
+             <h2>Quick Search</h2>
+             <p>
+             Easily search your snippets by content, category, web address, application, and more.
+             </p>
+           </div>
+           <div class="col-1">
+             <h2>iCloud Sync</h2>
+             <p>
+              Instantly saves and syncs snippets across all your devices.
+             </p>
+           </div>
+           <div class="col-1">
+             <h2>Complete History</h2>
+             <p>
+              Retrieve any snippets from the first moment you started using the app.
+             </p>
+           </div>
+         </div>
+     </div>
+</div>
+
+<div class="Access">
+   <div class="info">
+      <h2>Access Clipboard anywhere</h2>
+      <p>
+        Whether you’re on the go, or at your computer, you can access all your Clipboard 
+        snippets in a few simple clicks.
+      </p>
+   </div>
+
+   <div class="image">
+     <img src="images/image-devices.png">
+   </div> 
+</div>
+
+<div class="Supercharge">
+   <div class="info">
+       <h2>Supercharge your workflow</h2>
+       <p>
+        We’ve got the tools to boost your productivity.
+       </p>
+   </div>
+</div>
+
+<div class="features">
+  <div class="container grid">
+     <div class="feat">
+       <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PHBhdGggZD0ibTQzLjczNSA1MDkuNTE3YzUuNzc1IDMuNTY2LTIyLjAzNSAyLjI0MyA0MDguMjY1IDIuMjQzIDMzLjA4NCAwIDYwLTI2LjkwMyA2MC01OS45NzJ2LTQ0Ljk3OWMwLTguMjgtNi43MTYtMTQuOTkzLTE1LTE0Ljk5M2gtMzV2LTMyOS4xMzJjMC0zNC41NjQtMjguMTMzLTYyLjY4NC02Mi43MTQtNjIuNjg0aC0zODQuMjg2Yy04LjI4NCAwLTE1IDYuNzEzLTE1IDE0Ljk5M3Y0MzYuNzk1YzAgMTYuMDE5IDYuMjQxIDMxLjA3OSAxNy41NzIgNDIuNDA2IDcuMzIgNy4zMTcgMTYuMjggMTIuNTQ2IDI2LjE2MyAxNS4zMjN6bTQzOC4yNjUtNTcuNzI5YzAgMTYuNTM0LTEzLjQ1OCAyOS45ODYtMzAgMjkuOTg2aC0zNDAuMDUyYzUuMTE4LTguODI2IDguMDUyLTE5LjA3MSA4LjA1Mi0yOS45ODZ2LS43NjktMjkuMjE3aDM2MnptLTQ1Mi00MjEuODAyaDM2OS4yODZjMTguMDM4IDAgMzIuNzE0IDE0LjY2OCAzMi43MTQgMzIuNjk5djMyOS4xMzJoLTMyN2MtOC4yODQgMC0xNSA2LjcxMy0xNSAxNC45OTN2NDQuMjFjMCAyNy4yMTItMzIuMzAzIDQwLjg3Ni01MS4yMTQgMjEuOTcyLTUuNjY2LTUuNjY0LTguNzg2LTEzLjE5NS04Ljc4Ni0yMS4yMDR6Ii8+PHBhdGggZD0ibTEwOC42NTQgMTIwLjk0M2gyNDQuNjkxYzguMjg0IDAgMTUtNi43MTMgMTUtMTQuOTkzcy02LjcxNi0xNC45OTMtMTUtMTQuOTkzaC0yNDQuNjkxYy04LjI4NCAwLTE1IDYuNzEzLTE1IDE0Ljk5M3M2LjcxNiAxNC45OTMgMTUgMTQuOTkzeiIvPjxwYXRoIGQ9Im0xMDguNjU0IDE5MC45MWgyNDQuNjkxYzguMjg0IDAgMTUtNi43MTMgMTUtMTQuOTkzcy02LjcxNi0xNC45OTMtMTUtMTQuOTkzaC0yNDQuNjkxYy04LjI4NCAwLTE1IDYuNzEzLTE1IDE0Ljk5MyAwIDguMjgxIDYuNzE2IDE0Ljk5MyAxNSAxNC45OTN6Ii8+PHBhdGggZD0ibTEwOC42NTQgMjYwLjg3OGgyNDQuNjkxYzguMjg0IDAgMTUtNi43MTMgMTUtMTQuOTkzcy02LjcxNi0xNC45OTMtMTUtMTQuOTkzaC0yNDQuNjkxYy04LjI4NCAwLTE1IDYuNzEzLTE1IDE0Ljk5M3M2LjcxNiAxNC45OTMgMTUgMTQuOTkzeiIvPjxwYXRoIGQ9Im0xMDguNjU0IDMzMC44NDVoMjQ0LjY5MWM4LjI4NCAwIDE1LTYuNzEzIDE1LTE0Ljk5M3MtNi43MTYtMTQuOTkzLTE1LTE0Ljk5M2gtMjQ0LjY5MWMtOC4yODQgMC0xNSA2LjcxMy0xNSAxNC45OTNzNi43MTYgMTQuOTkzIDE1IDE0Ljk5M3oiLz48L2c+PC9zdmc+" width="80px" />
+       <h1>Create blacklists</h1>
+       <p>
+        Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+       </p>
+     </div>
+     <div class="feat">
+      <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ3NS4wODJweCIgaGVpZ2h0PSI0NzUuMDgycHgiIHZpZXdCb3g9IjAgMCA0NzUuMDgyIDQ3NS4wODIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ3NS4wODIgNDc1LjA4MjsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTQ3My4zNzEsNDMzLjExYy0xMC42NTctMy45OTctMjAuNDU4LTYuNTYzLTI5LjQwNy03LjcwNmMtOC45NDUtMC43NjctMTUuNTE2LTIuOTUtMTkuNzAxLTYuNTY3DQoJCWMtMi40NzUtMS41MjktNS44MDgtNi45NS05Ljk5Ni0xNi4yNzljLTcuODA2LTE1LjYwNC0xMy45ODktMjkuNzg2LTE4LjU1NS00Mi41MzdjLTcuNDI3LTIwLjE4MS0xMy42MTctMzUuNzg5LTE4LjU2NS00Ni44MjkNCgkJYy0xMC44NDUtMjUuMzExLTE5Ljk4Mi00Ny42NzgtMjcuNDAxLTY3LjA5MmMtNC4wMDEtMTAuNDY2LTE1Ljc5Ny0zOC43MzEtMzUuNDA1LTg0Ljc5NkwyNTUuODEzLDI0LjI2NWwtMy4xNDItNS45OTZoLTE1LjEyOQ0KCQloLTIxLjQxNGwtNzkuOTQsMjA2LjcwNEw2OC41MjMsNDAwLjg0N2MtNS4zMyw5Ljg5Ni05LjksMTYuMzcyLTEzLjcwNiwxOS40MTdjLTMuOTk2LDIuODQ4LTE0LjQ2Niw1LjgwNS0zMS40MDUsOC44NDMNCgkJYy0xMS4wNDIsMi4xMDItMTguNjU0LDMuODEyLTIyLjg0MSw1LjE0MUwwLDQ1Ni44MTJoNS45OTZjMTYuMzcsMCwzMi4yNjQtMS4zMzQsNDcuNjc5LTMuOTk3bDEzLjcwNi0yLjI3OQ0KCQljNTMuODY4LDMuODA2LDg3LjA4Miw1LjcwOCw5OS42NDIsNS43MDhjMC4zODEtMS45MDIsMC41NzEtNC40NzYsMC41NzEtNy43MDZjMC01LjcxNS0wLjA5NC0xMS4yMzEtMC4yODctMTYuNTYzDQoJCWMtMy45OTYtMC41NjgtNy44NTEtMS4xNDMtMTEuNTYxLTEuNzExYy0zLjcxMS0wLjU3NS02LjU2Ny0xLjA0Ny04LjU2NS0xLjQzMWMtMS45OTctMC4zNzMtMy4yODQtMC41NjgtMy44NTUtMC41NjgNCgkJYy0xNC42NTctMi4wOTQtMjQuNDYtNS4xNC0yOS40MDctOS4xMzRjLTMuMjM2LTIuMjgyLTQuODU0LTYuMzc1LTQuODU0LTEyLjI3OGMwLTMuODA2LDIuMTktMTEuNzk2LDYuNTY3LTIzLjk4Mg0KCQljMTQuMjc3LTM5Ljc3NiwyNC4xNzItNjUuODU2LDI5LjY5Mi03OC4yMjRsMTI4LjQ4MywwLjU2OGwyNi4yNjksNjUuMDk2bDEzLjQxMSwzMi41NDFjMS4xNDQsMy4yNDEsMS43MTEsNi4yODMsMS43MTEsOS4xMzgNCgkJcy0xLjE0LDUuNDI4LTMuNDI2LDcuNzA3Yy0yLjI4NSwxLjkwNS04Ljc1Myw0LjA5My0xOS40MTcsNi41NjNsLTM3LjQwNCw3Ljk5NGMtMC43NjMsNi4yODMtMS4xMzYsMTMuNzAyLTEuMTM2LDIyLjI3MQ0KCQlsMTYuNTYtMC41NzVsNTcuMTAzLTMuMTM4YzEwLjY1Ni0wLjM4LDIzLjUxLTAuNTc1LDM4LjU0Ny0wLjU3NWMxOC4yNjQsMCwzNi4yNTEsMC43NjMsNTMuOTU3LDIuMjgyDQoJCWMyMS4zMTMsMS41MjMsMzkuNTg4LDIuMjgzLDU0LjgxOSwyLjI4M2MwLjE5Mi0yLjI4MywwLjI4MS00Ljc1NCwwLjI4MS03LjQyM0M0NzUuMDgyLDQ0NS45NTcsNDc0LjUxMyw0NDAuNTM3LDQ3My4zNzEsNDMzLjExeg0KCQkgTTI1MS4yNDUsMjcwLjk0MWMtMi42NjYsMC03LjY2Mi0wLjA1Mi0xNC45ODktMC4xNDRjLTcuMzI3LTAuMDg5LTE4LjY0OS0wLjIzMy0zMy45NzMtMC40MjUNCgkJYy0xNS4zMjEtMC4xOTUtMjkuOTMtMC4zODMtNDMuODI0LTAuNTc0bDQ4LjUzNS0xMjguNDc3YzcuNDI0LDE1LjAzNywxNi4xNzgsMzUuMTE3LDI2LjI2NCw2MC4yNDINCgkJYzExLjQyNSwyNy43OSwyMC4xNzksNTAuNzI3LDI2LjI3Myw2OC44MDlMMjUxLjI0NSwyNzAuOTQxeiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" width="80px" />
+      <h1>Plain text snippets</h1>
+      <p>
+        Remove unwanted formatting from copied text for a consistent look.
+      </p>
+    </div>
+      <div class="feat">
+         <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIC03MiA1MTIuMDAxIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtNTEwLjc5Njg3NSAyMTkuODU1NDY5Yy0uOTI5Njg3LTEuNDMzNTk0LTIzLjE4MzU5NC0zNS40Njg3NS02NS43MDcwMzEtNjkuODkwNjI1LTI0Ljk5NjA5NC0yMC4yMzQzNzUtNTEuODI4MTI1LTM2LjM2MzI4Mi03OS43NTM5MDYtNDcuOTQxNDA2LTM0Ljk4ODI4Mi0xNC41MTE3MTktNzEuNzc3MzQ0LTIxLjg2NzE4OC0xMDkuMzM1OTM4LTIxLjg2NzE4OHMtNzQuMzQzNzUgNy4zNTU0NjktMTA5LjMzNTkzOCAyMS44NjcxODhjLTI3LjkyNTc4MSAxMS41NzgxMjQtNTQuNzU3ODEyIDI3LjcwNzAzMS03OS43NTM5MDYgNDcuOTQxNDA2LTQyLjUyMzQzNyAzNC40MjE4NzUtNjQuNzc3MzQ0IDY4LjQ1NzAzMS02NS43MDMxMjUgNjkuODkwNjI1LTEuNjA5Mzc1IDIuNDg0Mzc1LTEuNjA5Mzc1IDUuNjc5Njg3IDAgOC4xNjQwNjIuOTI1NzgxIDEuNDMzNTk0IDIzLjE3OTY4OCAzNS40Njg3NSA2NS43MDMxMjUgNjkuODkwNjI1IDI0Ljk5NjA5NCAyMC4yMzQzNzUgNTEuODI4MTI1IDM2LjM2MzI4MiA3OS43NTM5MDYgNDcuOTQ1MzEzIDM0Ljk5MjE4OCAxNC41MDc4MTIgNzEuNzc3MzQ0IDIxLjg2MzI4MSAxMDkuMzM1OTM4IDIxLjg2MzI4MSAyNS4xNTIzNDQgMCA1MC4xMjEwOTQtMy4zMTY0MDYgNzQuMjI2NTYyLTkuODU1NDY5IDQuMDAzOTA3LTEuMDg5ODQzIDYuMzcxMDk0LTUuMjE4NzUgNS4yODEyNS05LjIyMjY1Ni0xLjA4NTkzNy00LjAwNzgxMy01LjIxODc1LTYuMzcxMDk0LTkuMjE4NzUtNS4yODUxNTYtMjIuODIwMzEyIDYuMTk1MzEyLTQ2LjQ2ODc1IDkuMzMyMDMxLTcwLjI4OTA2MiA5LjMzMjAzMS04MC40MDYyNSAwLTE0MS44NDc2NTYtMzUuOTY0ODQ0LTE3OS4yMzA0NjktNjYuMTM2NzE5LTMyLjQ0NTMxMi0yNi4xODM1OTMtNTIuOTUzMTI1LTUyLjY4NzUtNjAuMTAxNTYyLTYyLjYxMzI4MSA3LjE1MjM0My05LjkyOTY4OCAyNy42NTYyNS0zNi40Mjk2ODggNjAuMTAxNTYyLTYyLjYxMzI4MSAzNy4zODI4MTMtMzAuMTcxODc1IDk4LjgyNDIxOS02Ni4xMzY3MTkgMTc5LjIzMDQ2OS02Ni4xMzY3MTlzMTQxLjg0NzY1NiAzNS45NjQ4NDQgMTc5LjIzNDM3NSA2Ni4xMzY3MTljMzIuNDQ1MzEzIDI2LjE4MzU5MyA1Mi45NTMxMjUgNTIuNjg3NSA2MC4xMDE1NjMgNjIuNjEzMjgxLTExLjYzMjgxMyAxNi4xNDA2MjUtNTguNjYwMTU3IDc2LjEwOTM3NS0xMzUuODc4OTA3IDEwOC4wODIwMzEtMy44MzIwMzEgMS41ODk4NDQtNS42NTYyNSA1Ljk4NDM3NS00LjA2NjQwNiA5LjgyMDMxMyAxLjU4NTkzNyAzLjgzMjAzMSA1Ljk4MDQ2OSA1LjY1NjI1IDkuODE2NDA2IDQuMDY2NDA2IDQ4LjkyOTY4OC0yMC4yNTc4MTIgODUuODUxNTYzLTUxLjE1NjI1IDEwOC4yMDcwMzEtNzMuNTAzOTA2IDI0LjI1NzgxMy0yNC4yNTM5MDYgMzYuODU1NDY5LTQzLjU3MDMxMyAzNy4zODI4MTMtNDQuMzgyODEzIDEuNjA1NDY5LTIuNDg0Mzc1IDEuNjA1NDY5LTUuNjc5Njg3IDAtOC4xNjQwNjJ6bTAgMCIvPjxwYXRoIGQ9Im0yNTYgMTEyLjIxODc1Yy02MS42MDE1NjIgMC0xMTEuNzE4NzUgNTAuMTE3MTg4LTExMS43MTg3NSAxMTEuNzE4NzVzNTAuMTE3MTg4IDExMS43MTg3NSAxMTEuNzE4NzUgMTExLjcxODc1IDExMS43MTg3NS01MC4xMTcxODggMTExLjcxODc1LTExMS43MTg3NS01MC4xMTcxODgtMTExLjcxODc1LTExMS43MTg3NS0xMTEuNzE4NzV6bTAgMjA4LjQwNjI1Yy01My4zMTI1IDAtOTYuNjg3NS00My4zNzEwOTQtOTYuNjg3NS05Ni42ODc1IDAtNTMuMzEyNSA0My4zNzUtOTYuNjg3NSA5Ni42ODc1LTk2LjY4NzUgNTMuMzE2NDA2IDAgOTYuNjkxNDA2IDQzLjM3NSA5Ni42OTE0MDYgOTYuNjg3NSAwIDUzLjMxNjQwNi00My4zNzUgOTYuNjg3NS05Ni42OTE0MDYgOTYuNjg3NXptMCAwIi8+PHBhdGggZD0ibTI1NiAxOTIuMzc1Yy0xNy40MDIzNDQgMC0zMS41NjI1IDE0LjE2MDE1Ni0zMS41NjI1IDMxLjU2MjVzMTQuMTYwMTU2IDMxLjU2MjUgMzEuNTYyNSAzMS41NjI1IDMxLjU2MjUtMTQuMTYwMTU2IDMxLjU2MjUtMzEuNTYyNS0xNC4xNjAxNTYtMzEuNTYyNS0zMS41NjI1LTMxLjU2MjV6bTAgNDguMDkzNzVjLTkuMTEzMjgxIDAtMTYuNTMxMjUtNy40MTQwNjItMTYuNTMxMjUtMTYuNTMxMjVzNy40MTc5NjktMTYuNTMxMjUgMTYuNTMxMjUtMTYuNTMxMjVjOS4xMTcxODggMCAxNi41MzUxNTYgNy40MTQwNjIgMTYuNTM1MTU2IDE2LjUzMTI1cy03LjQxNzk2OCAxNi41MzEyNS0xNi41MzUxNTYgMTYuNTMxMjV6bTAgMCIvPjxwYXRoIGQ9Im0yNTYgMzkuMDc4MTI1YzQuMTUyMzQ0IDAgNy41MTU2MjUtMy4zNjMyODEgNy41MTU2MjUtNy41MTU2MjV2LTI0LjA0Njg3NWMwLTQuMTUyMzQ0LTMuMzYzMjgxLTcuNTE1NjI1LTcuNTE1NjI1LTcuNTE1NjI1LTQuMTQ4NDM4IDAtNy41MTU2MjUgMy4zNjMyODEtNy41MTU2MjUgNy41MTU2MjV2MjQuMDQ2ODc1YzAgNC4xNTIzNDQgMy4zNjcxODcgNy41MTU2MjUgNy41MTU2MjUgNy41MTU2MjV6bTAgMCIvPjxwYXRoIGQ9Im0xNTMuMzA0Njg4IDYxLjA5Mzc1YzIuMjEwOTM3IDMuODI0MjE5IDcuNDAyMzQzIDQuOTE0MDYyIDEwLjk2ODc1IDIuMjg5MDYyIDMuMDQyOTY4LTIuMjM4MjgxIDMuOTMzNTkzLTYuNTM1MTU2IDIuMDQ2ODc0LTkuODA0Njg3bC0xMi4wMjM0MzctMjAuODI0MjE5Yy0yLjA3NDIxOS0zLjU5Mzc1LTYuNjY3OTY5LTQuODI0MjE4LTEwLjI2MTcxOS0yLjc1LTMuNTk3NjU2IDIuMDc0MjE5LTQuODI4MTI1IDYuNjcxODc1LTIuNzUzOTA2IDEwLjI2NTYyNXptMCAwIi8+PHBhdGggZD0ibTM0OC40Mjk2ODggNjMuODQzNzVjMy41NTA3ODEgMi4wNDY4NzUgOC4yMjI2NTYuNzkyOTY5IDEwLjI2NTYyNC0yLjc1bDEyLjAyMzQzOC0yMC44MjQyMTljMi4wNzgxMjUtMy41OTM3NS44NDM3NS04LjE5MTQwNi0yLjc1LTEwLjI2NTYyNS0zLjU5Mzc1LTIuMDc0MjE4LTguMTkxNDA2LS44NDM3NS0xMC4yNjU2MjUgMi43NWwtMTIuMDIzNDM3IDIwLjgyNDIxOWMtMi4wNzQyMTkgMy41OTM3NS0uODQzNzUgOC4xOTE0MDYgMi43NSAxMC4yNjU2MjV6bTAgMCIvPjwvc3ZnPg==" width="80px" />
+        <h1>Sneak preview</h1>
+         <p>
+          Quick preview of all snippets on your Clipboard for easy access.
+         </p>
+      </div>
+   </div>
+</div>
+
+<div class="Entreprises">
+   <div class="container">
+      <img src="images/logo-google.png">
+      <img src="images/logo-ibm.png">
+      <img src="images/logo-microsoft.png">
+      <img src="images/logo-hp.png">
+      <img src="images/logo-vector-graphics.png">
+   </div>
+</div>
+
+
+<div class="Clipboard">
+<div class="info-3">
+ <h1>Clipboard for iOS and Mac OS</h1>
+ <p>
+  Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
+  and you’re ready to start adding to your clipboard.
+ </p>
+</div>
+
+<div class="button">
+  <button class="btn-1">button for iOS</button>
+  <button class="btn-2">Download for Mac</button>
+ </div>
+</div>
+
+<footer>
+  <div class="container flex">
+       <img src="images/logo.svg" width="80px">
+       <div class="footer-1">
+           <ul>
+             <li><a href="#">FAQs</a></li>
+             <li><a href="#">Contact Us</a></li>
+           </ul>
+        </div>
+        <div class="footer-1">
+           <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Press Kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-1">
+          <ul>
+            <li><a href="#">Install Guide </a></li>
+          </ul>
+          </div>
+
+          <div class="social">
+              <i class=" i-1 fab fa-facebook-square"></i>
+              <i class=" i-2 fab fa-twitter-square"></i>
+              <i class=" i-3 fab fa-instagram-square"></i>
+
+          </div>
+  </div>
+</footer>
+ <!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ -->
+<!--   
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+</body>
+</html>

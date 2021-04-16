@@ -1,0 +1,384 @@
+:root{
+   --color-p:hsl(201, 11%, 66%);
+   --color-h1: hsl(210, 10%, 33%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*,body,html{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 18px;
+font-family: 'Bai Jamjuree', sans-serif;
+}
+
+  .container{
+    width: 94%;
+        margin: auto;
+    }
+
+
+
+/* start header */
+.header{
+    background:url(bg-header-mobile.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+    
+
+
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.info-header{
+   text-align: center;
+   margin-top: 6%;
+}
+
+.info-header h1{
+  color:  hsl(210, 10%, 33%);
+  margin-bottom: 14px;
+  font-size: 2.3rem;
+ padding-top: 20px;
+}
+
+.info-header p{
+    color:  var(--color-p);
+    width:70%;
+    margin: auto;
+    margin-bottom: 4%;
+    font-size: 95%;
+  }
+
+
+  .btn-2{
+      background-color: hsl(233, 100%, 69%);
+     margin-right: 20px; 
+      padding: 14px 50px;
+      border-radius: 20px;
+      border: none;
+      color: #ffff;
+      font-size: 17px;
+      outline: none;
+      transition: .5s;
+      
+}
+.btn-2:hover{
+    box-shadow: 0px 1px 11px hsl(233deg 100% 69%);
+}
+
+.btn-1:hover{
+    box-shadow: 0px 1px 11px hsl(171deg 66% 44%);
+}
+
+
+  .btn-1{
+      margin-right: 20px;
+      padding: 14px 60px;
+      border-radius: 20px;
+      border: none;
+      background-color: hsl(171, 66%, 44%);
+      color: #ffff;
+      font-size: 17px;
+      outline: none;
+      transition: .5s;
+      
+
+  }
+
+  @media (min-width:375px) and (max-width:600px){
+    .btn-2{
+        margin-top:20px;
+        width: 74%;
+       margin-left: 2%;
+    }
+    .btn-1{
+        width: 74%;
+       margin-right: 3%;
+    }
+
+
+
+    .info-header h1{
+       font-size: 31px;
+    }
+
+    .info-header p{
+        font-size: 68%;
+        text-align-last: center;
+        line-height: 1.5em;
+  }
+
+  }
+/* start snippets */
+.Supercharge,
+.Access,
+.snippets{
+  margin-top: 148px; 
+    text-align:center;
+
+}
+
+ .info h1 {
+    font-size: 1.5em;
+    color:  hsl(210, 10%, 33%);
+    margin-bottom: 10px;
+}
+
+.info p{
+    color:  var(--color-p);
+    width: 50%;
+    margin: 10px auto;
+    font-size: 95%;
+}
+
+ 
+@media (max-width:375px){
+
+    .info h1{
+         margin: auto;
+         width: 70%;
+         margin-bottom: 14px;
+    }
+
+    .info p{
+        text-align-last: center;
+        font-size: 82%;
+        width: 75%;
+        line-height: 1.5em;
+    }
+}
+
+ 
+
+/* start iCloud */
+
+.iCloud{
+    margin-top: 5%;
+   
+}
+
+.image-computer img{
+    width: 100%;
+
+
+}
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    
+}
+
+.info-History .col-1{
+    margin-bottom: 10%;
+}
+
+.info-History{
+    padding-left: 5%;
+    padding-right: 6%;
+    width: 44%;
+
+}
+
+.col-1 h2{
+    color:  hsl(210, 10%, 33%);
+    line-height: 2.5em;
+    font-size: 1.3em;
+   
+}
+
+ .col-1  p{
+    color:  var(--color-p);
+    line-height: 1.5em;
+} 
+ 
+@media (max-width:768px){
+    .flex{
+     
+        flex-direction: column;
+     
+    }
+
+    .iCloud{
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+    .info-History{
+
+      text-align: center;
+    }
+
+    .info-History{
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+    }
+
+}
+
+ .info h2{
+    color:  hsl(210, 10%, 33%);
+}
+
+.image img{
+  margin-top: 9%; 
+  width: 80%;
+
+}
+
+.Clipboard,
+.Entreprises,
+.features{
+    padding-top: 8%;
+}
+
+.features .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    text-align: center;
+    gap: 30px;
+}
+
+.feat h1{
+    color:  hsl(0, 0%, 14%);
+    margin-bottom: 14px;
+}
+.feat p{
+    color: var(--color-p);
+    line-height: 1.5em;
+}
+
+.feat img{
+    padding-bottom: 40px;
+}
+
+.Entreprises .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(200px, 1fr));
+    gap: 29px;
+}
+
+.Entreprises img{
+    margin: auto;
+    
+}
+
+.Clipboard{
+    text-align: center;
+}
+
+@media (min-width:375px) and (max-width:600px){
+   
+    .Entreprises img{
+         padding:8%;
+    }
+
+
+
+    .info-3 p{
+        color: var(--color-p);
+        text-align-last: center;
+        font-size: 82%;
+        width: 75%;
+        line-height: 1.5em;
+       }
+
+}
+
+
+    
+.info-3 h1{
+    color: var(--color-h1);
+    
+   }
+
+   .info-3 p{
+      color: var(--color-p);
+      
+     }
+
+  .info-3{
+     margin: auto;
+      font-size: 82%;
+      width: 75%;
+      line-height: 1.5em;
+  }
+
+.Clipboard .info-3 h1{
+    text-align: center;
+    color: var(--color-h1);
+    margin-bottom: 14px;
+    
+}
+
+
+.Clipboard .info-3 p{
+    line-height: 1.5em;
+    width: 73%;
+    margin: 4% auto;
+}
+
+
+
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    
+}
+
+footer{
+    margin-top: 10%;
+    background-color:hsl(201deg 2% 92%) ;
+}
+
+.footer-1 a{
+    text-decoration:none;
+    color: var(--color-h1);
+}
+
+.footer-1 li:hover a{
+    color: hsl(171, 66%, 44%);
+    transition: .4s;
+}
+
+.footer-1 li{
+   padding-bottom:10px;
+}
+
+
+.social i{
+    padding:0 10px;
+}
+.i-3:hover,
+.i-2:hover,
+.i-1:hover{
+    color: hsl(171, 66%, 44%);
+    transition: .4s;
+}
+
+
+@media (min-width:375px){
+
+    img{
+        margin-bottom: 62px;
+
+    }
+    .footer-1 li{
+        padding-bottom: 36px;
+    text-align: center;
+     }
+
+}
