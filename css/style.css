@@ -3,6 +3,10 @@
    --color-h1: hsl(210, 10%, 33%);
 }
 
+body{
+     list-style-type: none;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
 
 *,body,html{
@@ -337,7 +341,6 @@ footer .container{
     align-items: center;
     justify-content: space-between;
     padding: 40px;
-      list-style-type: none;
 }
 
 footer{
